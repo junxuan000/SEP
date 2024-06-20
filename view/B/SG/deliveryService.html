@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Service - Island Furniture</title>
+    <style>
+        .container {
+            max-width: 1200px; 
+            margin: auto;
+            
+        }
+        .delivery-option {
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 40px; 
+        }
+        .delivery-option img {
+            width: 150px; 
+            height: 150px; 
+            margin-right: 20px; 
+            object-fit: cover; 
+        }
+        h3 {
+            margin-top: 0; 
+        }
+        header#header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: white;
+            width: 100%;
+        }
+    </style>
+    <script src="../checkCountry.js"></script>
+
+</head>
+<body>
+    <header id="header">
+        <script src="../../header.js"></script>
+        <script src="menu2.js"></script>
+    </header>
+    
+        <main>
+            <div class="container">
+                <h2>Delivery Options at Island Furniture</h2>
+                <section class="delivery-option">
+                    <img src="../img/parcel_delivery.png" alt="Parcel box icon">
+                    <div>
+                        <h3>Parcel Delivery - $15</h3>
+                        <p>Order up to a weight of 40kg, and a maximum length per item of 1.8 meters.</p>
+                        <p><strong>Parcel size:</strong> (L) 59 cm x (W) 80 cm x (H) 60 cm</p>
+                        <p><strong>Example product:</strong> ROCKING (from children)</p>
+                        <p>Delivery will take place within 3-5 working days, between 9 am and 6 pm.</p>
+                    </div>
+                </section>
+                <section class="delivery-option">
+                    <img src="../img/truck_delivery.png" alt="Truck icon">
+                    <div>
+                        <h3>Truck Delivery - $35</h3>
+                        <p>Delivery typically takes place within 2-5 days from the date of order.</p>
+                        <p><strong>Note:</strong> An additional flat rate of $20 will apply if there is no lift access,
+                            or if items cannot fit in the lift at the delivery address located in a building from the
+                            3rd floor onwards. This service is applicable up to the 5th floor only. Please pay the fee
+                            directly to the service provider.</p>
+                        <p><strong>Drilling services:</strong> Only available with assembly purchases. Delivery-only
+                            purchases are not applicable for drilling services.</p>
+                    </div>
+                </section>
+                <p>Please note that during major holiday seasons (Chinese New Year, Hari Raya Puasa, Deepavali,
+                    Christmas, etc.), please allow an extra 1-3 business days for processing time on truck and
+                    parcel delivery orders due to the high peak of orders.</p>
+            </div>
+        </main>
+        <footer>
+            <script src="../footer.js"></script>
+        </footer>
+    </div>
+</body>
+</html>

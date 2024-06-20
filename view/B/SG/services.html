@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Island Furniture</title>
+    <style>
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .service {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .service img {
+            width: 100%;
+            max-width: 300px;
+            height: 168px;
+            object-fit: cover;
+        }
+        header#header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: white;
+            width: 100%;
+        }
+    </style>
+    <script src="../checkCountry.js"></script>
+    
+</head>
+
+<body>
+    <header id="header">
+        <script src="../../header.js"></script>
+        <script src="menu2.js"></script>
+    </header>
+
+    <main>
+        <div class="container1">
+            <div class="service">
+                <img src="../img/delivery_service.png" alt="Delivery Service">
+                <h3>Delivery Service</h3>
+                <p>Our delivery service ensures your furniture arrives safely and on time.</p>
+                <a id="deliveryServiceLink" class="btn">Learn More</a>
+            </div>
+            <div class="service">
+                <img src="../img/assembly_service.png" alt="Assembly Service">
+                <h3>Assembly Service</h3>
+                <p>We offer professional assembly services for all our furniture.</p>
+                <a id="assemblyServiceLink" class="btn">Learn More</a>
+            </div>
+            <div class="service">
+                <img src="../img/planning-tools5.png" alt="Planning Guide Tool">
+                <h3>Planning Guide Tool</h3>
+                <p>Use our planning guide tool to design your perfect room.</p>
+                <a id="planningGuideLink" class="btn">Learn More</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <script src="../footer.js"></script>
+    </footer>
+
+    <script>
+        // Dynamic link setting based on country prefix stored in localStorage
+        document.addEventListener("DOMContentLoaded", function () {
+            var countryPrefix = localStorage.getItem("urlPrefix");
+            document.getElementById("deliveryServiceLink").href = "/B/" + countryPrefix + "/deliveryService.html";
+            document.getElementById("assemblyServiceLink").href = "/B/" + countryPrefix + "/assemblyService.html";
+            document.getElementById("planningGuideLink").href = "/B/" + countryPrefix + "/planningGuide.html";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembly Service - Island Furniture</title>
+    <style>
+        .container {
+            max-width: 1200px; /* Set a max width for the container to center it */
+            margin: auto;
+           
+        }
+        .service-option {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Align items vertically */
+            margin-bottom: 40px; /* Space between each service option */
+        }
+        .service-option img {
+            width: 800px; /* Increase the width */
+            height: 300px; /* Increase the height */
+            margin-right: 20px; /* Add some space between the image and the text */
+            object-fit: cover; /* Maintain the aspect ratio without distortion */
+        }
+        h3 {
+            margin-top: 0; /* Remove top margin from h3 for tighter layout */
+        }
+        header#header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: white;
+            width: 100%;
+        }
+    </style>
+    <script src="../checkCountry.js"></script>
+</head>
+<body>
+    <header id="header">
+        <script src="../../header.js"></script>
+        <script src="menu2.js"></script>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h2>Assembly Services at Island Furniture</h2>
+            <section class="service-option">
+                <img src="../img/assemblers.jpg" alt="Professional Assemblers">
+                <div>
+                    <h3>Easy and Professional Assembly</h3>
+                    <p>Our products are designed to be simple to assemble on your own, helping you save money. For those who need a helping hand, our professional assembly service is available at your home or office, ensuring a hassle-free setup.</p>
+                    <p>You can schedule our assembly service during online checkout or directly in our stores, suitable for any product range, from a single piece of furniture to a complex cabinet system.</p>
+                    <p>Once completed, we handle all the cleanup, taking away packaging and ensuring everything is recycled properly, leaving your space neat and tidy.</p>
+                </div>
+            </section>
+            <section class="service-fees">
+                <h3>Assembly Service Fees</h3>
+                <ul>
+                    <li>Complimentary assembly service for purchases exceeding $1000.</li>
+                    <li>No additional fees for standard assembly.</li>
+                    <li>A $5 charge per drilled hole applies only if wall-mounting is required and the assembly service was not scheduled.</li>
+                    <li>Drilling services are available only when assembly service is requested.</li>
+                </ul>
+            </section>
+           
+        </div>
+    </main>
+    <footer>
+        <script src="../footer.js"></script>
+    </footer>
+</body>
+</html>
